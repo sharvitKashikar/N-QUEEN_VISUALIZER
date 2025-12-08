@@ -1,16 +1,9 @@
-# N-QUEEN_VISUALIZER
-This is a simple python implementation of the classic N-QUEEN problem in the field of computer science.
-The objective of the problem is to place N chess queens on an N×N chessboard in such a way that no two queens threaten each other. In other words, no two queens can share the same row, column, or diagonal.
-First ensure you have python installed in your local machine!
-To run this code in your system:
-```
-git clone (paste the project link)
-```
+# N-QUEEN VISUALIZER
 
-```
-import pygame
-```
-You are almost set !
-```
-python N-queen.py
-```
+This project provides a visualizer for the classic N-Queen problem, demonstrating the recursive backtracking algorithm's step-by-step execution.
+
+## How it Works
+
+The `N-queen.py` file contains the `solveNQUtil` function, which implements the recursive backtracking algorithm to find solutions for the N-Queen problem. It iterates through possible queen placements, checks for safety, and recursively calls itself to place subsequent queens. When a queen is placed or removed, the visualizer updates the grid to show the state of the board.
+
+*More details about running the project and other files would go here.*
