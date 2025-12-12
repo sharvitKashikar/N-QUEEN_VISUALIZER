@@ -1,23 +1,48 @@
-# N-QUEEN_VISUALIZER Repository
+# N-Queen Visualizer
 
-This repository contains various Python mini-applications and algorithm visualizations.
+This repository contains a Python-based N-Queen problem solver with a Pygame visualizer.
 
-## New Applications Added in this Commit:
+## Features
 
-### 1. N-Queen Visualizer (`N-queen.py`)
-A pygame-based visualizer for the N-Queen problem, allowing users to see the N-Queen backtracking algorithm in action.
+- Solves the N-Queen problem for a user-defined board size (N).
+- Visualizes the placement of queens on an N x N chessboard using Pygame.
+- Allows navigation through different solutions (if multiple exist) for a given N.
 
-### 2. Simple Bank Account Management System (`bankk.py`)
-A console-based program that demonstrates basic bank account operations like deposit, withdrawal, and balance check using a `BankAccount` class.
+## Setup
 
-### 3. Student Record System (`filehandling.py`)
-Manages student records (roll number, name, marks) using file I/O to add, view, and search student data.
+To run the visualizer, you need to have Python and Pygame installed.
 
-### 4. Number Guessing Game (`game.py`)
-A classic console game where the user tries to guess a randomly generated number between 1 and 100 within a certain number of attempts.
+1.  **Clone the repository:**
 
-### 5. Secure Login System (`login.py`)
-A command-line login system with predefined credentials and password validation rules (length, uppercase, lowercase, digit, special character).
+    ```bash
+    git clone https://github.com/sharvitKashikar/N-QUEEN_VISUALIZER.git
+    cd N-QUEEN_VISUALIZER
+    ```
 
-### 6. Student Performance Analyzer (`stu.py`)
-Calculates and displays a student's total marks, average, grade, and pass/fail status based on marks entered for multiple subjects.
+2.  **Install Pygame:**
+
+    If you don't have Pygame installed, you can install it using pip:
+
+    ```bash
+    pip install pygame
+    ```
+
+## Usage
+
+To start the N-Queen visualizer, run the `game.py` script:
+
+```bash
+python game.py
+```
+
+--- 
+
+### Running the Application:
+
+1.  **Input N:** When prompted in the console, enter the desired size 'N' for the N x N chessboard (e.g., `4` for a 4x4 board).
+2.  **Visualizer Window:** A Pygame window will open, displaying the N-Queen solutions.
+3.  **Navigation:**
+    *   Use the **left arrow key** to view the previous solution.
+    *   Use the **right arrow key** to view the next solution.
+    *   Press the **'R' key** to restart and enter a new 'N'.
+    *   Close the window to exit the application.
