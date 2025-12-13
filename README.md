@@ -1,48 +1,76 @@
-# N-Queen Visualizer
+# N-QUEEN VISUALIZER
 
-This repository contains a Python-based N-Queen problem solver with a Pygame visualizer.
+*(Previous content of N-QUEEN VISUALIZER, if any, would go here. As no README was provided, assuming a new content piece.)*
 
-## Features
+## Student Record Management System
 
-- Solves the N-Queen problem for a user-defined board size (N).
-- Visualizes the placement of queens on an N x N chessboard using Pygame.
-- Allows navigation through different solutions (if multiple exist) for a given N.
+This project now includes a simple command-line based student record management system implemented in C++. It allows users to perform basic operations on student data, which is persisted to a file named `student_record.txt`.
 
-## Setup
+### Features
 
-To run the visualizer, you need to have Python and Pygame installed.
+1.  **Add Student**: Allows you to add a new student record including name, roll number, class, and fee.
+2.  **View All Records**: Displays all existing student records stored in the system.
+3.  **Search Record**: Enables searching for a student record by their name.
 
-1.  **Clone the repository:**
+### How to Compile and Run
 
+To compile and run the student record system, follow these steps:
+
+1.  **Navigate to the project directory** where `main.cpp` and `Record.h` are located.
+2.  **Compile the C++ code** using a g++ compiler:
     ```bash
-    git clone https://github.com/sharvitKashikar/N-QUEEN_VISUALIZER.git
-    cd N-QUEEN_VISUALIZER
+    g++ main.cpp -o student_records
+    ```
+3.  **Run the executable**:
+    ```bash
+    ./student_records
     ```
 
-2.  **Install Pygame:**
+### Usage
 
-    If you don't have Pygame installed, you can install it using pip:
+Upon running the program, you will be presented with a menu of options:
 
-    ```bash
-    pip install pygame
-    ```
-
-## Usage
-
-To start the N-Queen visualizer, run the `game.py` script:
-
-```bash
-python game.py
+```
+1. Add Student
+2. View Records
+3. Search Record
+4. Exit
 ```
 
---- 
+Enter the number corresponding to the action you wish to perform.
 
-### Running the Application:
+#### Example: Adding a Student
 
-1.  **Input N:** When prompted in the console, enter the desired size 'N' for the N x N chessboard (e.g., `4` for a 4x4 board).
-2.  **Visualizer Window:** A Pygame window will open, displaying the N-Queen solutions.
-3.  **Navigation:**
-    *   Use the **left arrow key** to view the previous solution.
-    *   Use the **right arrow key** to view the next solution.
-    *   Press the **'R' key** to restart and enter a new 'N'.
-    *   Close the window to exit the application.
+```
+Enter your choice: 1
+Enter Student Name: Alice
+Enter Roll No.: 101
+Enter Class: 12
+Enter Fee: 500.00
+Student Added Successfully!
+```
+
+#### Example: Viewing Records
+
+```
+Enter your choice: 2
+
+Student Records:
+Name: Alice, Roll No: 101, Class: 12, Fee: 500.00
+--------------------------------------------
+```
+
+#### Example: Searching for a Record
+
+```
+Enter your choice: 3
+Enter the name of the student to search: Alice
+
+Student Found:
+Name: Alice, Roll No: 101, Class: 12, Fee: 500.00
+--------------------------------------------
+```
+
+#### Data Persistence
+
+All student records are automatically saved to `student_record.txt` in the same directory as the executable. This file is created if it doesn't exist.
